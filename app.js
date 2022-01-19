@@ -1,4 +1,3 @@
-
 let chances = [
   "It is certain.",
   "It is decidedly so.",
@@ -22,36 +21,34 @@ let chances = [
   "Very doubtful.",
 ];
 
+// very helpful:      *** Math.floor(Math.random()*(max-min+1)+min) ***
 
-//***************************************************** Solution 1 : if it's an Array ********************************************
 
-// checkChances = (chances) => {
-//     let randomNumber = Math.floor(Math.random() * 19);
-//     randomNumber <= 10
-//       ? console.log(chances[randomNumber], "positive")
-//       : randomNumber <= 15
-//       ? console.log(chances[randomNumber], "natural")
-//       : console.log(chances[randomNumber], "negative");
-//   };
-  
-//   checkChances(chances);
+//***************************************************** Solution 1 : if it's an Array *****************************************************
+
+// checkChances = () => {
+//   const randomNumber = Math.floor(Math.random() * 20);
+//   randomNumber <= 9
+//     ? console.log(chances[randomNumber], "positive")
+//     : randomNumber <= 14
+//     ? console.log(chances[randomNumber], "natural")
+//     : console.log(chances[randomNumber], "negative");
+// };
+
+// checkChances();
 
 //***************************************************** */ Solution 2 : if it's an Object ***************************************************
 
-// let chancesArr = { ...chances };
-// fortunTeller = (chancesArr) => {
-//     let randomNumber = Math.floor(Math.random() * 19 + 1);
-//     let answer = chances[randomNumber];
-//     console.log(answer);
-    
-//     randomNumber <= 10
-//     ? console.log("positive")
-//     : randomNumber <= 15
-//     ? console.log("natural")
-//     : console.log("negative");
+// const chancesObj = { ...chances };
+// fortunTeller = () => {
+//   const randomNumber = Math.floor(Math.random() * 20);
+//   const answer = chancesObj[randomNumber];
+
+//   randomNumber <= 9
+//     ? console.log(answer, "positive")
+//     : randomNumber <= 14
+//     ? console.log(answer, "natural")
+//     : console.log(answer, "negative");
 // };
-// fortunTeller(chancesArr);
 
-
-
-// Math.floor(Math.random()*(max-min)+min)
+// fortunTeller();
