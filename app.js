@@ -26,7 +26,7 @@ let chances = [
 //***************************************************** Solution 1 : if it's an Array ********************************************
 
 // checkChances = (chances) => {
-//     let randomNumber = Math.floor(Math.random() * 20 + 1);
+//     let randomNumber = Math.floor(Math.random() * 21);
 //     randomNumber <= 10
 //       ? console.log(chances[randomNumber], "positive")
 //       : randomNumber <= 15
@@ -53,3 +53,5 @@ let chances = [
 // fortunTeller(chancesArr);
 
 
+
+// Math.floor(Math.random()*(max-min)+min)
