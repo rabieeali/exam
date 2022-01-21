@@ -26,22 +26,22 @@ let chances = [
 
 //***************************************************** Solution 1 : if it's an Array *****************************************************
 
-// checkChances = () => {
-//   const randomNumber = Math.floor(Math.random() * 20);
-//   randomNumber <= 9
-//     ? console.log(chances[randomNumber], "positive")
-//     : randomNumber <= 14
-//     ? console.log(chances[randomNumber], "natural")
-//     : console.log(chances[randomNumber], "negative");
-// };
+checkChances = () => {
+  const randomNumber = Math.floor(Math.random() * chances.length);
+  randomNumber <= 9
+    ? console.log(chances[randomNumber], "positive")
+    : randomNumber <= 14
+    ? console.log(chances[randomNumber], "natural")
+    : console.log(chances[randomNumber], "negative");
+};
 
-// checkChances();
+checkChances();
 
 //***************************************************** */ Solution 2 : if it's an Object ***************************************************
 
 // const chancesObj = { ...chances };
-// fortunTeller = () => {
-//   const randomNumber = Math.floor(Math.random() * 20);
+// fortuneTeller = () => {
+//   const randomNumber = Math.floor(Math.random() * chances.length);
 //   const answer = chancesObj[randomNumber];
 
 //   randomNumber <= 9
@@ -51,4 +51,4 @@ let chances = [
 //     : console.log(answer, "negative");
 // };
 
-// fortunTeller();
+// fortuneTeller();
